@@ -1,0 +1,9 @@
+﻿- name: "WhatsApp Mini-CRM"
+  url: "https://github.com/yourusername/wa-crm"
+  description: "Lightweight sales pipeline and contact manager for micro-businesses."
+  status: "Public"
+
+- name: "Telemetry Scoring Engine"
+  url: "https://github.com/yourusername/telemetry-score"
+  description: "Customer churn prediction framework using product usage heuristics."
+  status: "Public"

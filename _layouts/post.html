@@ -1,0 +1,13 @@
+﻿---
+layout: default
+---
+<article class="essay-article">
+  <header class="essay-header">
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b %Y" }}</time>
+    <h1>{{ page.title }}</h1>
+  </header>
+  <div class="essay-content">
+    {{ content }}
+  </div>
+  <p class="back-link"><a href="/">← Back to archive</a></p>
+</article>

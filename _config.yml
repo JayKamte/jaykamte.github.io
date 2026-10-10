@@ -1,0 +1,15 @@
+﻿title: "Jay Kamte"
+description: "Product management, systems, and notes."
+url: "https://yourusername.github.io"
+author:
+  name: "Jay Kamte"
+  bio: "Product Leader & Builder based in Bangalore."
+
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+exclude:
+  - vendor
+  - .bundle
+  - Gemfile
+  - Gemfile.lock

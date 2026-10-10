@@ -1,0 +1,35 @@
+﻿---
+layout: default
+---
+<section class="hero">
+  <h1>Hello, I'm Jay.</h1>
+  <p>I build enterprise software, explore agentic AI, and write about product management, engineering, and execution.</p>
+  <p>Here you'll find my public notebook, essays, and open-source side quests.</p>
+</section>
+
+<section id="essays">
+  <h2 class="section-title">Essays & Notes</h2>
+  <ul class="essay-list">
+    {% for post in site.posts %}
+    <li class="essay-item">
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b %Y" }}</time>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Side Quests</h2>
+  <div class="grid">
+    {% for project in site.data.projects %}
+    <div class="card">
+      <h3>
+        <a href="{{ project.url }}" target="_blank" rel="noopener">{{ project.name }}</a>
+        <span class="badge">{{ project.status }}</span>
+      </h3>
+      <p>{{ project.description }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
